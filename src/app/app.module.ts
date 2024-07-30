@@ -2,7 +2,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
+
 import { AppComponent } from './app.component';
+
 
 import { routes } from './app.router';
 import { HomeComponent } from './home/home.component';
@@ -25,6 +28,10 @@ import { BlogComponent } from './blog/blog.component';
 
 import { LightboxModule } from 'ngx-lightbox';
 import { GmapComponent } from './gmap/gmap.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { LogoComponent } from './logo/logo.component';
+import {UserapiService} from './userapi.service';
+import { UserDetailsComponent } from './user-details/user-details.component'
 @NgModule({
   declarations: [
     AppComponent,    
@@ -45,15 +52,19 @@ import { GmapComponent } from './gmap/gmap.component';
     ReservationformComponent,
     CardCorasalComponent,
     BlogComponent,
-    GmapComponent
+    GmapComponent,
+    ForgotPasswordComponent,
+    LogoComponent,
+    UserDetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     routes,
-    LightboxModule
+    LightboxModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [UserapiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

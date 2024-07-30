@@ -10,6 +10,7 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { ServiceComponent } from './service/service.component';
 import { BlogComponent } from './blog/blog.component';
 import { SignupComponent } from './signup/signup.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 
 
 export const router: Routes = [
@@ -23,6 +24,8 @@ export const router: Routes = [
     { path: 'login', component: LoginComponent },
     { path: 'register', component: ReservationformComponent },      
     { path: 'signup', component: SignupComponent },      
+    { path: 'login/signup', component: SignupComponent },     
+    { path: 'login/forgotpswd', component: ForgotPasswordComponent },     
     { path: '**', component: NotfoundComponent },    
 ];
 
