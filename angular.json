@@ -36,10 +36,19 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.css"
+           "styles": [
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/ngx-lightbox/lightbox.css",
+              "node_modules/lightbox2/dist/css/lightbox.min.css",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+              "node_modules/lightbox2/dist/js/lightbox.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -102,5 +111,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "56bb8da4-f2d2-40cd-adbf-de4a5dbf2423"
   }
 }
