@@ -1,0 +1,33 @@
+.heading{
+    color: #fff;
+    padding: 15px 18px;
+    line-height: 20px;
+    padding-bottom: 13px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: #3a3138;
+}
+.form-check{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.card-title{   
+    font-family: "Muli";
+    text-transform: capitalize;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.card-title:hover{
+    color:#871b2a;   
+}
+.card-text{
+    text-overflow: ellipsis;
+}
+.price{
+    position: relative;
+    font-weight: 600;
+    margin-top: -14px;
+}

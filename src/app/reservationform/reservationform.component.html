@@ -25,23 +25,47 @@
                   </div>
                 </div>
               </div>
-              <form action="#!">
+              <form [formGroup]="angForm" novalidate>
                 <div class="row gy-3 gy-md-4 overflow-hidden">
                   <div class="col-12">
                     <label for="firstName" class="form-label">First Name <span class="text-danger">*</span></label>
-                    <input type="email" class="form-control" name="firstName" id="firstName" placeholder="First Name" required>
+                    <input type="text" class="form-control" formControlName="fname" class="form-control" id="firstName" placeholder="First Name" required>
+                  </div>
+                  <div *ngIf="angForm.controls['fname'].invalid && (angForm.controls['fname'].dirty || angForm.controls['fname'].touched)" 
+                  class="alert alert-danger">
+                     <div *ngIf="angForm.controls['fname'].errors">
+                       First Name is required.
+                     </div>
                   </div>
                   <div class="col-12">
                     <label for="lastName" class="form-label">Last Name <span class="text-danger">*</span></label>
-                    <input type="email" class="form-control" name="lastName" id="lastName" placeholder="Last Name" required>
+                    <input type="text" formControlName="lname" class="form-control" id="lastName" placeholder="Last Name" required>
+                  </div>
+                  <div *ngIf="angForm.controls['lname'].invalid && (angForm.controls['lname'].dirty || angForm.controls['lname'].touched)" 
+                  class="alert alert-danger">
+                     <div *ngIf="angForm.controls['lname'].errors">
+                       Last Name is required.
+                     </div>
                   </div>
                   <div class="col-12">
                     <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
-                    <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com" required>
+                    <input type="email" formControlName="email" class="form-control" id="email" placeholder="name@example.com" required>
+                  </div>
+                  <div *ngIf="angForm.controls['email'].invalid && (angForm.controls['email'].dirty || angForm.controls['email'].touched)" 
+                  class="alert alert-danger">
+                     <div *ngIf="angForm.controls['email'].errors">
+                       Email is required.
+                     </div>
                   </div>
                   <div class="col-12">
                     <label for="password" class="form-label">Password <span class="text-danger">*</span></label>
-                    <input type="password" class="form-control" name="password" id="password" value="" required>
+                    <input type="password" formControlName="password"  class="form-control" name="password" id="password" value="" required>
+                  </div>
+                  <div *ngIf="angForm.controls['password'].invalid && (angForm.controls['password'].dirty || angForm.controls['password'].touched)" 
+                  class="alert alert-danger">
+                     <div *ngIf="angForm.controls['password'].errors">
+                       Password is required.
+                     </div>
                   </div>
                   <div class="col-12">
                     <div class="form-check">
@@ -53,10 +77,15 @@
                   </div>
                   <div class="col-12">
                     <div class="d-grid">
-                      <button class="btn bsb-btn-xl btn-primary" type="submit">Sign up</button>
+                      <button class="btn bsb-btn-xl btn-primary"  [disabled]="angForm.pristine || angForm.invalid"  type="submit">Sign up</button>
                     </div>
                   </div>
                 </div>
+                <p>First Name: {{ angForm.value.fname }}</p>
+                <p>Last Name: {{ angForm.value.lname }}</p>
+                <p>Email: {{ angForm.value.email }}</p>
+                <p>Password: {{ angForm.value.password }}</p>
+              <p>Form status: {{ angForm.status }}</p>
               </form>
               <div class="row">
                 <div class="col-12">
