@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './gallary.component.css'
 })
 export class GallaryComponent {
-
+ 
 }

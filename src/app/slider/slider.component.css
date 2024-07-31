@@ -25,6 +25,10 @@
 .carousel-caption{
     color:#ffffff;
 }
+
+.carousel-indicators{
+    opacity: 0;
+}
 @media (min-width: 992px){
     .search-sec{
         position: relative;

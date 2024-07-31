@@ -31,7 +31,18 @@ import { GmapComponent } from './gmap/gmap.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { LogoComponent } from './logo/logo.component';
 import {UserapiService} from './userapi.service';
-import { UserDetailsComponent } from './user-details/user-details.component'
+import { UserDetailsComponent } from './user-details/user-details.component';
+import { CustomerFormComponent } from './customer-form/customer-form.component';
+
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { BookingSectionComponent } from './booking-section/booking-section.component';
+import { PlansDropdownComponent } from './plans-dropdown/plans-dropdown.component';
+import { ResoursesDropdownComponent } from './resourses-dropdown/resourses-dropdown.component';
+import { RoomPageComponent } from './room-page/room-page.component';
+import { AllUsersComponent } from './all-users/all-users.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,    
@@ -55,14 +66,22 @@ import { UserDetailsComponent } from './user-details/user-details.component'
     GmapComponent,
     ForgotPasswordComponent,
     LogoComponent,
-    UserDetailsComponent
+    UserDetailsComponent,
+    CustomerFormComponent,
+    BookingSectionComponent,
+    PlansDropdownComponent,
+    ResoursesDropdownComponent,
+    RoomPageComponent,
+    AllUsersComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     routes,
     LightboxModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [UserapiService],
   bootstrap: [AppComponent]

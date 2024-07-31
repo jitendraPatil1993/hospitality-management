@@ -1,0 +1,49 @@
+#booking-section .form-container {
+    background: #fff;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 100%;
+    margin-top: -40px !important;
+    
+}
+
+#booking-section .form-container h2 {
+    color: #252525;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 0 14px;
+}
+
+#booking-section .form-container h2 span {
+    color: #1ba47f;
+}
+
+#booking-section .form-container form input {
+    border: 2px solid #e1e1e1;
+    border-radius: 2px;
+    color: #727272 !important;
+    font: 400 15px / 1.6em "Raleway", sans-serif;
+    height: 44px;
+    margin-top: 20px;
+    padding-bottom: 6px;
+    z-index: 9999;
+}
+
+#booking-section .form-container form button {
+    background-color: #21baa3;
+    border: 2px solid #21baa3;
+    border-radius: 2px;
+    color: #fff;
+    display: block;
+    font: 700 15px / 1.6em "Raleway", sans-serif;
+    margin-bottom: 22px;
+    margin-top: 20px;
+    padding: 8px 53px;
+    transition: all 0.3s ease 0s;
+    width: 100%;
+}
