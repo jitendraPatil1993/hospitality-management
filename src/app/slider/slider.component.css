@@ -22,6 +22,11 @@
     height: calc(3rem + 2px) !important;
     border-radius:0;
 }
+.carousel{    
+    margin-top: -140px;
+    position: relative;
+    z-index: -999;
+}
 .carousel-caption{
     color:#ffffff;
 }

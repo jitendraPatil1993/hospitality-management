@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="row">
+        <table class="table  table-striped  table-hover table-bordered">
+           
+                <thead>
+                <tr>
+                    
+                    <th scope="col">Name</th>
+                    <th scope="col">Location</th>
+                    <th scope="col">Unit</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Phone Number</th>
+                    
+                   
+                  </tr>
+                  </thead>
+                  <tbody>
+                <tr *ngFor="let resort of resorts$">                   
+                    <td scope="col">
+                        {{resort.name}}
+                    </td>
+                    <td scope="col">
+                        {{resort.location}}
+                    </td>
+                    <td scope="col">
+                        {{resort.unit}}
+                    </td>
+                    <td scope="col">
+                        {{resort.email}}
+                    </td>
+                    
+                    <td scope="col">
+                        {{resort.phone }}
+                    </td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

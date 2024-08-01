@@ -1,3 +1,8 @@
+.banner{
+    position: relative;
+    margin-top: -140px;
+    z-index:-999;
+}
 .heading{
     color: #fff;
     padding: 15px 18px;

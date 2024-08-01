@@ -47,3 +47,9 @@
     transition: all 0.3s ease 0s;
     width: 100%;
 }
+
+@media screen and (min-width: 769px) {
+    #booking-section .form-container form button{
+        padding: 8px 20px;
+    }   
+  }
