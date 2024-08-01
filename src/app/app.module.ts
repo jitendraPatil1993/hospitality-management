@@ -11,7 +11,6 @@ import { routes } from './app.router';
 import { HomeComponent } from './home/home.component';
 import { GallaryComponent } from './gallary/gallary.component';
 import { LoginComponent } from './login/login.component';
-import { RegisterFormComponent } from './register-form/register-form.component';
 import { SignupComponent } from './signup/signup.component';
 import { RoomComponent } from './room/room.component';
 import { NavComponent } from './nav/nav.component';
@@ -37,10 +36,10 @@ import { CustomerFormComponent } from './customer-form/customer-form.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BookingSectionComponent } from './booking-section/booking-section.component';
-import { PlansDropdownComponent } from './plans-dropdown/plans-dropdown.component';
-import { ResoursesDropdownComponent } from './resourses-dropdown/resourses-dropdown.component';
+
 import { RoomPageComponent } from './room-page/room-page.component';
 import { AllUsersComponent } from './all-users/all-users.component';
+import { ResortDetailComponent } from './resort-detail/resort-detail.component';
 
 
 @NgModule({
@@ -48,8 +47,7 @@ import { AllUsersComponent } from './all-users/all-users.component';
     AppComponent,    
     HomeComponent,
     GallaryComponent,
-    LoginComponent,
-    RegisterFormComponent,
+    LoginComponent,    
     SignupComponent,
     RoomComponent,
     NavComponent,
@@ -68,11 +66,10 @@ import { AllUsersComponent } from './all-users/all-users.component';
     LogoComponent,
     UserDetailsComponent,
     CustomerFormComponent,
-    BookingSectionComponent,
-    PlansDropdownComponent,
-    ResoursesDropdownComponent,
+    BookingSectionComponent,    
     RoomPageComponent,
-    AllUsersComponent
+    AllUsersComponent,
+    ResortDetailComponent
   ],
   imports: [
     BrowserModule,

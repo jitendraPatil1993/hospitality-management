@@ -13,6 +13,7 @@ import { SignupComponent } from './signup/signup.component';
 import {CustomerFormComponent} from './customer-form/customer-form.component';
 import {AllUsersComponent} from  './all-users/all-users.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { ResortDetailComponent } from './resort-detail/resort-detail.component';
 
 
 export const router: Routes = [
@@ -29,7 +30,8 @@ export const router: Routes = [
     { path: 'signup', component: SignupComponent },      
     { path: 'login/signup', component: SignupComponent },     
     {path:'allusers', component: AllUsersComponent},
-    { path: 'login/forgotpswd', component: ForgotPasswordComponent },     
+    { path: 'login/forgotpswd', component: ForgotPasswordComponent },    
+    { path: 'resort', component: ResortDetailComponent },      
     { path: '**', component: NotfoundComponent },    
 ];
 

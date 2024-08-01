@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './nav.component.css'
 })
 export class NavComponent {
-
+  
+  status: boolean = true;
+  hideBtn(): void{
+    this.status = !this.status; 
+  }
 }
