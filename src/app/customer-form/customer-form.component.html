@@ -102,32 +102,38 @@
         
 
     </div>
-    <table class="table table-striped table-hover">
-        <thead>
-            <tr>
-              <th scope="col">Name</th>
-              <th scope="col">Address</th>
-              <th scope="col">Postcode</th>
-              <th scope="col">Designation</th>
-              <th scope="col">Gender</th>
-              <th scope="col">Remark</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>{{f.value.name}}</td>
-              <td> {{f.value.address}}</td>
-              <td>{{f.value.postcode}}</td>
-              <td>{{f.value.designation}}</td>
-              <td>{{f.value.gender}}</td>
-              <td>{{f.value.remark}}</td>
-            </tr>
-    </table>     
+    
+   
      <p> {{f.value|json}}</p>      
       </div>
     </div>
     </div>
     </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                      <th scope="col">Name</th>
+                      <th scope="col">Address</th>
+                      <th scope="col">Postcode</th>
+                      <th scope="col">Designation</th>
+                      <th scope="col">Gender</th>
+                      <th scope="col">Remark</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>{{f.value.name}}</td>
+                      <td> {{f.value.address}}</td>
+                      <td>{{f.value.postcode}}</td>
+                      <td>{{f.value.designation}}</td>
+                      <td>{{f.value.gender}}</td>
+                      <td>{{f.value.remark}}</td>
+                    </tr>
+            </table>    
+        </div>
     </div>
 </section>
 

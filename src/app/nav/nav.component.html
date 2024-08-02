@@ -23,11 +23,20 @@
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" routerLink = "activity">Activities</a></li>
-              <li><a class="dropdown-item" routerLink = "blog">Blog</a></li>
-              <li><a class="dropdown-item" routerLink = "facilities">Facilities</a></li>
+              <li><a class="dropdown-item" routerLink = "blog">Blog</a></li>             
+          <li>
+          <!-- Split dropend button -->
+          <div class="btn-group dropend">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              Facilities
+            </button>          
+            <ul class="dropdown-menu">
               <li><a class="dropdown-item" routerLink = "reg-form">Register</a></li>
               <li><a class="dropdown-item" routerLink = "allusers">All Users</a></li>
               <li><a class="dropdown-item" routerLink = "resort">Resort Details</a></li>
+            </ul>
+          </div>
+          </li>
               
             </ul>
           </li>
